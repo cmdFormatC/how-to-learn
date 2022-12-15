@@ -276,6 +276,8 @@ text-decoration: none;
   position: absolute;
   left: 0;
   bottom: 0;
+  height: 637px;
+  width: 867px;
 }
 
 
@@ -299,6 +301,7 @@ text-decoration: none;
   align-items: center;
   flex-direction: column;
   background-color: #1f1f1f;
+  overflow: hidden;
   
 }
 .section-title_theme_dark {
