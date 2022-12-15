@@ -16,7 +16,12 @@ p {
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
-
+h1 {
+  font-size: 1em;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
 
 
 .page {
@@ -407,7 +412,7 @@ text-decoration: none;
 
 }
 .footer_column_content_social {
-  display: flex;  
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 

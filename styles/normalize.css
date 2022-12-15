@@ -38,15 +38,10 @@ main {
  */
 
 h1 {
-  /* margin: 0.67em 0; !!!!!!!!!!!!!!!!!! */
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
-h2 {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-  
-}
 /* Grouping content
    ========================================================================== */
 
@@ -352,5 +347,3 @@ template {
 [hidden] {
   display: none;
 }
-
-
