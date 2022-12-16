@@ -1,29 +1,3 @@
-* 
-{
-  margin: 0;
-  padding: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-
-
-
-p {
-  display: inline;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-}
-h1 {
-  font-size: 1em;
-  margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-
-
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -52,12 +26,14 @@ h1 {
   background-color: #2f80ed;
   position: absolute;
   right: 0;
-  margin-top: 64px;
+  top: 64px;
 }
 .header__main-illustration {
   position: absolute;
   right: 0;
   bottom: 0;
+  height: 608px;
+  width: 765px;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -69,52 +45,49 @@ h1 {
 }
 
 
-.logo_place_header {
+.header__place_logo {
   position: absolute;
-  margin: 30px 0 0 64px;
+  top: 30px;
+  left: 64px;
+  height: 32px;
+  width: 228px;
 }
 
 .header__title {
   width: 730px;
   margin-left: 64px;
-  font-size: 50px;
-  font-weight: 600;
-  line-height: 96px;
   display: flex;
   align-items: center;
   z-index: 5;
-}
-.header__title_text {
   font-size: 120px;
   font-weight: 600;
   line-height: 96px;
 }
 
+
 .header__subtitle {
   position: absolute;
-  left: 0;
-  bottom: 0;
-  margin: 0 0 30px 64px;
+  left: 64px;
+  bottom: 30px;
   width: 388px;
   z-index: 5;
-
-}
-.header__subtitle_text {
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
   color: #000;
+
 }
+
+
 .header_link {
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
+  color: #2f80ed;
 }
 .description {
-  display: flex;
-  justify-content: center;
-  width: 80vw;
+  width: 80%;
   margin: 100px auto;
   
 }
@@ -124,43 +97,36 @@ h1 {
   justify-content: space-between;
 }
 .two-columns__brief {
+  margin: 0;
   width: 175px;
-}
-
-.two-columns__brief_text {
   color: #2f80ed;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
 
+
 .two-columns__main-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-width: 80%;
-  max-height: 100%;
   min-width: 784px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
 
-.two-columns__paragraph_text {
-  margin: 15px 0;
-}
-
-.two-columns__paragraphsecond {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-height: 100%;
-  min-width: 784px;
+.two-columns__paragraph {
+  margin: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+}
+
+
+.two-columns__paragraph_second {
+    margin: 30px 0;
 }
 .two-columns__span-accent {
   line-height: 34px;
@@ -176,31 +142,27 @@ h1 {
   flex-direction: column;
   
 }
-.section-title {
+.digits__section-title {
+  margin: 0;
   width: 60%;
-  margin-bottom: 20px;
-}
-
-.section-title_text {
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
-  margin: 0;
   text-align: center;
 }
 
-.section-subtitle {
+
+.digits__section-subtitle {
   width: 60%;
   margin-bottom: 0;
-  margin-top: 0;
-  
-}
-.section-subtitle_text {
+  margin-top: 20px;
   text-align: center;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  
 }
+
 
 .table {
   
@@ -208,7 +170,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 0;
 }
 
@@ -223,82 +185,68 @@ h1 {
 
 .table__heading {
   margin: 0;
-}
-.table__heading_text {
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
 }
+
 .table__text {
   margin: 20px 0 0 0;
-
-}
-.table__text_paragraph {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+
 }
+
 .feynman {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
-  height: 890px;
+  min-height: 890px;
   background-color: #f2f2f2;
 }
 .feynman__title {
   position: absolute;
   top: 100px;
+  left: auto;
+  margin: 0;
   width: 648px;
   text-align: center;
-}
-
-.feynman__title_text{
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
 }
-.feynman__subtitle_text {
+
+
+.feynman__subtitle {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   margin-top: 70px;
+  z-index: 1;
 }
-.feynman__link-wrapper {
-  display: inline;
+.feynman__link {
   position: absolute;
   right: 48px;
   top: 50%;
+  color: #2f80ed;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
 }
-.feynman__link-wrapper_link {
-line-height: 51px;
-font-size: 36px;
-font-weight: normal;
-text-decoration: none;
-}
+
 .feynman__background-image {
   position: absolute;
   left: 0;
   bottom: 0;
   height: 637px;
   width: 867px;
-}
-
-
-.kaufman__triangle {
-  position: absolute;
-  top: 0;
-  right: -210px;
-  height: 877px;
-  width: 877px;
   z-index: 0;
 }
 
-.kaufman__triangle_image {
-  height: 877px;
-  width: 877px;
-}
 .kaufman{
   position: relative;
   display: flex;
@@ -307,30 +255,36 @@ text-decoration: none;
   flex-direction: column;
   background-color: #1f1f1f;
   overflow: hidden;
+  height: auto;
   
 }
+.kaufman__triangle {
+  position: absolute;
+  top: 0;
+  right: -210px;
+  height: 877px;
+  width: 877px;
+  background-size: 877px 877px;
+  background-image: url("../images/kaufman-triangle.svg");
+}
+
+
+
 .section-title_theme_dark {
   width: 60%;
   margin: 90px auto 20px auto;
-
-}
-
-.section-title_text_theme_dark {
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
-  margin: 0;
   text-align: center;
   color: white;
 }
+
 
 .section-subtitle_theme_dark {
   width: 60%;
   margin-bottom: 0;
   margin-top: 0;
-  
-}
-.section-subtitle_text_theme_dark {
   text-align: center;
   line-height: 34px;
   font-size: 24px;
@@ -339,12 +293,11 @@ text-decoration: none;
 }
 
 .table_theme_dark {
-  
   width: 1100px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 0;
   margin-bottom: 90px;
   z-index: 1;
@@ -352,20 +305,17 @@ text-decoration: none;
 
 .table__heading_theme_dark {
   margin: 0;
-}
-.table__heading_theme_dark_text {
   line-height: 1.15;
   font-size: 24px;
   font-weight: normal;
 }
 .table__text_theme_dark {
   margin: 20px 0 0 0;
-}
-.table__text_theme_dark_paragraph {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
+
 .footer {
   min-height: 350px;
   background-color: #1f1f1f;
@@ -380,25 +330,34 @@ text-decoration: none;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.footer__colums_content_copyright {
+.footer__colums_content-copyright {
   flex-basis: 711px;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 
 }
-.footer__author {
-  position: absolute;
-  bottom: 18px;
+.footer__logo_place-footer {
+  height: 32px;
+  width: 228px;
 }
-.footer__author_text {
+.footer__author {
+  margin: 18px 0 18px 0;
   color: white;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
 }
+
+
 .footer__column_content_info {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-between;
+
 
 
 }
@@ -408,36 +367,33 @@ text-decoration: none;
   flex-wrap: wrap;
 
 }
-.footer__column-heading_text{
+.footer__column-heading{
   color: white;
   font-size: 18px;
   line-height: 30px;
   font-weight: 600;
 }
 .footer__column-link {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  
-}
-.footer__column-links {
-  margin-top: 20px;
-  margin-bottom: 16px;
-}
-.footer_social-icon {
-  margin: auto 10px auto 0;
-}
-
-.footer__column-link_ico {
-  display: block;
-  width: 16px;
-  height: 16px;
-}
-
-.footer__column-link_text {
   text-decoration: none;
   color: white;
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
+  display: flex;
+  
 }
+.footer__column-links {
+  margin-top: 20px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer_social-icon {
+  margin: auto 10px auto 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+
